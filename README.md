@@ -68,7 +68,15 @@ y_pred
 ![image](https://github.com/user-attachments/assets/08f1e1c9-e92e-42f7-b5a0-87c4e1738843)
 ![image](https://github.com/user-attachments/assets/7f188084-5b2f-4767-85ed-b611e32ccf9b)
 ![image](https://github.com/user-attachments/assets/c6924923-545e-421e-be7d-df70e85a5b92)
+
+
+
+
 ![Screenshot 2024-09-19 113548](https://github.com/user-attachments/assets/0cc79282-3ded-4356-ae51-a17ff8dc2a3b)
+
+
+
+
 ![Screenshot 2024-09-19 113530](https://github.com/user-attachments/assets/571bbb14-0030-4742-a839-8f601f2aaa4f)
 
 
