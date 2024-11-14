@@ -8,17 +8,25 @@ To write a program to implement the the Logistic Regression Model to Predict the
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Import the standard libraries such as pandas module to read the corresponding csv file.
-
-2.Upload the dataset values and check for any null or duplicated values using .isnull() and .duplicated() function respectively.
-
-3.Import LabelEncoder and encode the corresponding dataset values.
-
-4.Import LogisticRegression from sklearn and apply the model on the dataset using train and test values of x and y and Predict the values of array using the variable y_pred.
-
-5.Calculate the accuracy, confusion and the classification report by importing the required modules such as accuracy_score, confusion_matrix and the classification_report from sklearn.metrics module.
-
-6.Apply new unknown values and print all the acqirred values for accuracy, confusion and the classification report.
+1. Import the `pandas` library and read the dataset `Placement_Data.csv` into a DataFrame `data`.
+2. Display the first few rows of `data` using `data.head()` to check its contents.
+3. Create a copy of `data` named `data1` to work on.
+4. Drop the columns `"sl_no"` and `"salary"` from `data1` using `data1.drop()`.
+5. Display the first few rows of `data1` after dropping columns to confirm changes.
+6. Check for missing values in `data1` using `data1.isnull().sum()`.
+7. Check for duplicate rows in `data1` using `data1.duplicated().sum()`.
+8. Import `LabelEncoder` from `sklearn.preprocessing` for encoding categorical variables.
+9. Create an instance of `LabelEncoder` named `le`.
+10. Encode categorical columns (`"gender"`, `"ssc_b"`, `"hsc_b"`, `"hsc_s"`, `"degree_t"`, `"workex"`, `"specialisation"`, `"status"`) in `data1` using `le.fit_transform()`.
+11. Display `data1` after encoding to check that categorical columns are encoded into numerical values.
+12. Extract the independent variables `x` (all columns except `"status"`) from `data1`.
+13. Extract the dependent variable `y` (the `"status"` column) from `data1`.
+14. Split `x` and `y` into training and testing sets using `train_test_split()` with 80% training and 20% testing data, setting `random_state` to 0 for reproducibility.
+15. Import `LogisticRegression` from `sklearn.linear_model`.
+16. Create an instance of `LogisticRegression` named `lr` with the solver set to `"liblinear"`.
+17. Train the model on the training data using `lr.fit()` with `x_train` and `y_train`.
+18. Make predictions on the test set `x_test` using `lr.predict()` and store them in `y_pred`.
+19. Print or return `y_pred` to display the predicted output.
 
 ## Program:
 ```
