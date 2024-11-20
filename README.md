@@ -29,14 +29,11 @@ To write a program to implement the the Logistic Regression Model to Predict the
 19. Print or return `y_pred` to display the predicted output.
 
 ## Program:
-```
+```py
 /*
 Program to implement the the Logistic Regression Model to Predict the Placement Status of Student.
-Developed by: Dhivya Dahrshini B
-RegisterNumber: 212223240031
-*/
-```
-/*
+Developed by:Dhivya Dharshini B
+RegisterNumber: 2122232340031
 import pandas as pd
 data1=pd.read_csv('Placement_Data.csv')
 data1.head()
